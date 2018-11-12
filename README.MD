@@ -60,20 +60,20 @@ Los datos los puedes extraer de los siguientes enlaces:
 
 Estos enlaces proporcionan un JSON con la siguiente estructura:<br/>
 {<br/>
-	count: number;<br/>
-	entries: object[];<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;count: number;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;entries: object[];<br/>
 }<br/>
 <br/>
 <br/>
 Cada objeto de la propiedad “entries” tiene la siguiente estructura:<br/>
 {<br/>
-API: string;<br/>
-Description: string;<br/>
-Auth: string;<br/>
-HTTPS: boolean;<br/>
-Cors: string;<br/>
-Link: string;<br/>
-Category: string;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;API: string;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Description: string;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Auth: string;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;HTTPS: boolean;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Cors: string;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Link: string;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Category: string;<br/>
 }<br/>
 <br/>
 
