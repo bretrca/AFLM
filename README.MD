@@ -58,22 +58,24 @@ Los datos los puedes extraer de los siguientes enlaces:
 - Links de Música: https://api.publicapis.org/entries?category=music
 - Links de Salud: https://api.publicapis.org/entries?category=health
 
-Estos enlaces proporcionan un JSON con la siguiente estructura:
-{
-	count: number;
-	entries: object[];
-}
-
-Cada objeto de la propiedad “entries” tiene la siguiente estructura:
-{
-API: string;
-Description: string;
-Auth: string;
-HTTPS: boolean;
-Cors: string;
-Link: string;
-Category: string;
-}
+Estos enlaces proporcionan un JSON con la siguiente estructura:<br/>
+{<br/>
+	count: number;<br/>
+	entries: object[];<br/>
+}<br/>
+<br/>
+<br/>
+Cada objeto de la propiedad “entries” tiene la siguiente estructura:<br/>
+{<br/>
+API: string;<br/>
+Description: string;<br/>
+Auth: string;<br/>
+HTTPS: boolean;<br/>
+Cors: string;<br/>
+Link: string;<br/>
+Category: string;<br/>
+}<br/>
+<br/>
 
 
 ## ¿Como entregar la solución?
