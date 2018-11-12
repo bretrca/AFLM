@@ -46,8 +46,9 @@ Ejemplo: no se podrá navegar a la vista de links de música si previamente no s
 
 ## OTROS
 En nuestra conversación con el presidente de la asociación, nos comentó que un primo suyo -que está a la última en temas de nuevas tecnologías-, le ha hablado de Angular, HTML5 y otras tecnologías relacionadas con el front-end, por lo que quiere que su web también esté a la última y luzca lo mejor del front-end. Pero que no quiere que se incorporen “cosas” de terceras partes, sino que quiere que todo el desarrollo sea original.
-IMPLEMENTACIÓN
 
+
+## IMPLEMENTACIÓN
 Deberás crear una web en Angular que cumpla con el diseño y la regla que nos han proporcionado y sin usar ningún framework gráfico externo (como Bootstrap). La implementación deberá contar con elementos habituales de las aplicaciones Angular: componentes, servicios, routing, etc.
 
 Los datos los puedes extraer de los siguientes enlaces:
