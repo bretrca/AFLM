@@ -1,7 +1,7 @@
 ## AFLM
 
 La Asociación de Fans de Links Molones nos ha encargado una nueva web, para que sus asociados puedan disfrutar del repositorio de links que acaban de descubrir:
-https://api.publicapis.org/
+- https://api.publicapis.org/
 
 En el repositorio, los links están agrupados en diferentes categorías. Sin embargo, la AFLM solamente quiere que sus asociados vean los links de 4 categorías específicas: animales, libros, música y salud.
 
@@ -52,10 +52,10 @@ Deberás crear una web en Angular que cumpla con el diseño y la regla que nos h
 
 Los datos los puedes extraer de los siguientes enlaces:
 
-Links de animales: https://api.publicapis.org/entries?category=animals
-Links de libros: https://api.publicapis.org/entries?category=books
-Links de Música: https://api.publicapis.org/entries?category=music
-Links de Salud: https://api.publicapis.org/entries?category=health
+- Links de animales: https://api.publicapis.org/entries?category=animals
+- Links de libros: https://api.publicapis.org/entries?category=books
+- Links de Música: https://api.publicapis.org/entries?category=music
+- Links de Salud: https://api.publicapis.org/entries?category=health
 
 Estos enlaces proporcionan un JSON con la siguiente estructura:
 {
