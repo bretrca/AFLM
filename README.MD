@@ -5,7 +5,7 @@ La Asociación de Fans de Links Molones nos ha encargado una nueva web, para que
 
 En el repositorio, los links están agrupados en diferentes categorías. Sin embargo, la AFLM solamente quiere que sus asociados vean los links de 4 categorías específicas: animales, libros, música y salud.
 
-En la carpeta Images encontrarás los esbozos que nos han proporcionado sobre las vistas que quieren en su web:
+En la carpeta Images encontrarás un diseño que nos han proporcionado sobre las vistas que quieren en su web:
 
 ### Home
 ![Home](/Images/AFLMHome.jpg)
