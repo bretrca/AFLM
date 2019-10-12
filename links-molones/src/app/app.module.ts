@@ -9,6 +9,7 @@ import { BooksComponent } from './books/books.component';
 import { MusicComponent } from './music/music.component';
 import { HealthComponent } from './health/health.component';
 import { RulesComponent } from './rules/rules.component';
+//import{HttpModule} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RulesComponent } from './rules/rules.component';
     BooksComponent,
     MusicComponent,
     HealthComponent,
-    RulesComponent
+    RulesComponent,
+    //HttpModule
   ],
   imports: [
     BrowserModule,
