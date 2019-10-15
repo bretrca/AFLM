@@ -15,15 +15,12 @@ import { defaultCipherList } from 'constants';
   styleUrls: ['./animals.component.scss']
 })
 export class AnimalsComponent implements OnInit {
+
 animals=ANIMALS;
 selectedAnimals:any;
 
-entriesInfo:any;   
-counter:number;
-Description:string;
-api:string;
-data;
-element;
+selectedDescriptor:any;
+
 
   constructor(
     private router :Router,
@@ -39,13 +36,14 @@ this.fetchService.fetchAnimals()
  .then((response)=>{response.json()
   .then((data)=>{if(this.animals.length<1)
   {this.animals.push(data[`entries`])}else{return}}).catch(err=>console.log('error',err))})
-  //console.log(this.animals)
-  
+  //console.log(this.animals) 
   //console.table(this.animals[0])
   this.selectedAnimals=this.animals[0]
-  //console.log(this.selectedAnimals)
-/*   this.animals.filter(ele=>ele[0])
-  console.log(this.animals) */
+
   
+  }
+  openDescription(value){
+this.selectedDescriptor=this.selectedAnimals[value];
+console.log(this.selectedDescriptor)
   }
 }

@@ -16,19 +16,19 @@
                 <th>Nombre</th>
                 <th>Descripción</th>
 
-                <tr *ngFor="let selected of selectedAnimals ">
-                    <td >{{selected.API}}</td>
+                <tr *ngFor="let selected of selectedAnimals; let i = index">
+                    <td (click)="openDescription(i)">{{selected.API}}</td>
                     <td >{{selected.Description}}</td>
                 </tr>
                
             </table>
-            <div class="description" >
+            <div class="description" *ngIf="selectedDescriptor!=0" >
                 <h3>Nombre</h3>
-                <p>{{selected.Link}}</p>
+                <p>{{selectedDescriptor.Link}}</p>
                 <h3>Descripción</h3>
-                <p>{{selected.Description}}</p>
+                <p>{{selectedDescriptor.Description}}</p>
                 <h3>autor</h3>
-                <p>{{selected.Auth}}</p>
+                <p>{{selectedDescriptor.Auth}}</p>
                 <button>Navegar</button>
             </div>
 
