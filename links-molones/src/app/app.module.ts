@@ -9,6 +9,7 @@ import { BooksComponent } from './books/books.component';
 import { MusicComponent } from './music/music.component';
 import { HealthComponent } from './health/health.component';
 import { RulesComponent } from './rules/rules.component';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 //import{HttpModule} from '@angular/http';
 
 @NgModule({
@@ -24,7 +25,9 @@ import { RulesComponent } from './rules/rules.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

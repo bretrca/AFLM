@@ -1,33 +1,37 @@
-<div>
-    <div class="heads">
-        <button routerLink='/home'>volver</button>
-        <h2>ANIMALES</h2>
+<div >
+    <div  >
+        <!-- <div  *ngIf='entries.length>0'> -->
 
-    </div>
-    <div class="center">
-        <table>
+        <!-- *ngFor="let selected of selectedAnimals" -->
+        <!-- <div class="heads" *ngFor="let selected of entries">  -->
 
-            <th>titulo1</th>
-            <th>titulo2</th>
+        <div class="heads" >
+            <button routerLink='/home'>volver</button>
+            <h2>Animals</h2>
 
-            <tr>
-                <td>definicion1</td>
-                <td> definicion2</td>
-            </tr>
-            <tr>
-                <td>definicion1</td>
-                <td> definicion2</td>
-            </tr>
-        </table>
-        <div class="description">
-            <h3>Nombre</h3>
-            <p>nombre del link</p>
-            <h3>Descripción</h3>
-            <p>descripción del link</p>
-            <h3>autor</h3>
-            <p>Descripción del link</p>
-            <button>Navegar</button>
         </div>
+        <div class="center" >
+            <table  >
 
+                <th>Nombre</th>
+                <th>Descripción</th>
+
+                <tr *ngFor="let selected of selectedAnimals ">
+                    <td >{{selected.API}}</td>
+                    <td >{{selected.Description}}</td>
+                </tr>
+               
+            </table>
+            <div class="description" >
+                <h3>Nombre</h3>
+                <p>{{selected.Link}}</p>
+                <h3>Descripción</h3>
+                <p>{{selected.Description}}</p>
+                <h3>autor</h3>
+                <p>{{selected.Auth}}</p>
+                <button>Navegar</button>
+            </div>
+
+        </div>
     </div>
 </div>

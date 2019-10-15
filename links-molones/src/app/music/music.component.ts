@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import { FetchService } from '../services/fetch.service';
 
 @Component({
   selector: 'app-music',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MusicComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router :Router,
+    private route: ActivatedRoute,
+    private fetchService: FetchService
+  ) { }
 
   ngOnInit() {
   }
