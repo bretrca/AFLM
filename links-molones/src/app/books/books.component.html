@@ -1,38 +1,37 @@
-<div > 
-        <!-- <div  *ngIf='entries.length>0'> -->
-        
-        <!-- *ngFor="let selected of selectedAnimals" -->
-             <!-- <div class="heads" *ngFor="let selected of entries">  -->
-        
-            <div class="heads" > 
+<div >
+        <div  >
+            <!-- <div  *ngIf='entries.length>0'> -->
+    
+            <!-- *ngFor="let selected of selectedAnimals" -->
+            <!-- <div class="heads" *ngFor="let selected of entries">  -->
+    
+            <div class="heads" >
                 <button routerLink='/home'>volver</button>
-                  <h2>{{selected.category}}</h2>
-        
+                <h2>Books</h2>
+    
             </div>
-            <div class="center">
-                <table>
-        
-                    <th>titulo1</th>
-                    <th>titulo2</th>
-        
-                    <tr>
-                        <td>definicion1</td>
-                        <td> definicion2</td>
+            <div class="center" >
+                <table  >
+    
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+    
+                    <tr *ngFor="let selected of selectedBooks; let i = index">
+                        <td (click)="openDescription(i)">{{selected.API}}</td>
+                        <td >{{selected.Description}}</td>
                     </tr>
-                    <tr>
-                        <td>definicion1</td>
-                        <td> definicion2</td>
-                    </tr>
+                   
                 </table>
-                <div class="description">
+                <div class="description" *ngIf="selectedDescriptor!=0" >
                     <h3>Nombre</h3>
-                    <p>nombre del link</p>
+                    <p>{{selectedDescriptor.API}}</p>
                     <h3>Descripción</h3>
-                    <p>descripción del link</p>
+                    <p>{{selectedDescriptor.Description}}</p>
                     <h3>autor</h3>
-                    <p>Descripción del link</p>
-                    <button>Navegar</button>
+                    <p>{{selectedDescriptor.Auth}}</p>
+                    <a href={{selectedDescriptor.Link}} target="_blank"><button>Navegar</button></a>
                 </div>
-        
+    
             </div>
         </div>
+    </div>
