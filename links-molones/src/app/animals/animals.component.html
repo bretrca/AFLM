@@ -24,12 +24,12 @@
             </table>
             <div class="description" *ngIf="selectedDescriptor!=0" >
                 <h3>Nombre</h3>
-                <p>{{selectedDescriptor.Link}}</p>
+                <p>{{selectedDescriptor.API}}</p>
                 <h3>Descripción</h3>
                 <p>{{selectedDescriptor.Description}}</p>
                 <h3>autor</h3>
                 <p>{{selectedDescriptor.Auth}}</p>
-                <button>Navegar</button>
+                <a href={{selectedDescriptor.Link}}><button>Navegar</button></a>
             </div>
 
         </div>
