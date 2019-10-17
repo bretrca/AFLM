@@ -20,7 +20,7 @@ import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
     BooksComponent,
     MusicComponent,
     HealthComponent,
-    RulesComponent,
+    RulesComponent
     //HttpModule
   ],
   imports: [

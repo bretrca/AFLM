@@ -17,7 +17,7 @@
                 <th>Descripción</th>
 
                 <tr *ngFor="let selected of selectedAnimals; let i = index">
-                    <td (click)="openDescription(i)">{{selected.API}}</td>
+                    <td (click)="openDescription(i)" >{{selected.API}}</td>
                     <td >{{selected.Description}}</td>
                 </tr>
                

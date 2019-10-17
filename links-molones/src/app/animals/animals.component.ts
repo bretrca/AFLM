@@ -6,7 +6,7 @@ import { Observable, of } from 'rxjs';
 import { Object, Ob } from '../objects/objects';
 import {ANIMALS} from '../objects/animals.object';
 import { RoutesService } from '../services/routes.service';
-import { defaultCipherList } from 'constants';
+
 
 
 @Component({
@@ -40,8 +40,8 @@ this.fetchService.fetchAnimals()
   //console.table(this.animals[0])
   this.selectedAnimals=this.animals[0]
 
-  
   }
+  /* aquí escogemos el valor de la variable que hemos seleccionado para poder mostrarla en la descripción */
   openDescription(value){
 this.selectedDescriptor=this.selectedAnimals[value];
 console.log(this.selectedDescriptor)

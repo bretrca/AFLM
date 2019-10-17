@@ -29,14 +29,6 @@ Primero los links de animales
 Después los de libros
 Después los de música
 Y por último los de salud */
-ngOnInit(){
-  for(let i=0 ;i>routes.length;i++){
-    if(routes[i].path!=='animals'){
-      console.log('equivocado')
-    }else{
-      console.log('ahi estás')
-    }
-}
-}
+ngOnInit(){}
 
 }

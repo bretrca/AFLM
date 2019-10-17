@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { RouterLink, Router } from '@angular/router';
 
 
 @Injectable({
@@ -9,21 +10,21 @@ import { Observable } from 'rxjs';
 
 
 export class RoutesService {
+  animalElement:boolean;
+  booksElement:boolean;
+  musicElement:boolean;
+  healthElement:boolean;
+    constructor(
+      private http:HttpClient,
+      private router: Router
+      ) {}
 
-    constructor(private http:HttpClient) {
-        
-   }
-/*     url = `https://api.publicapis.org/entries?category=animals`;
-  getAnimals():Observable<Object[]> {
-    return this.http.get<Object[]>(this.url);
-  } */
+    returnRoute(element){
+      this.router.navigate[('/animals')]
 
-apiUrl=`https://api.publicapis.org/entries?category=animals`;
-getPost(){
-    return this.http.get(this.apiUrl)
- }
-
-   fetchAnimals(){
-       return fetch(`https://api.publicapis.org/entries?category=animals`);
-   }
+ element = true;
+  return element;
+  }
+      
+    
 }

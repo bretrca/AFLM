@@ -17,14 +17,17 @@ h1,h2{
     }
 
 }
-ul{
+div.nav{
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    padding-bottom: 2rem;
 }
-li{
+button{
+    border-radius: 10%;
    padding: 1rem;
     font-size: 2rem;
     margin: auto;
+
 }
 
