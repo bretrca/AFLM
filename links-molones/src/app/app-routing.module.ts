@@ -5,6 +5,7 @@ import { AnimalsComponent } from './animals/animals.component';
 import { BooksComponent } from './books/books.component';
 import { MusicComponent } from './music/music.component';
 import { HealthComponent } from './health/health.component';
+import { RulesComponent } from './rules/rules.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'animals', component: AnimalsComponent },
   { path: 'books', component: BooksComponent },
   { path: 'music', component: MusicComponent },
-  { path: 'health', component: HealthComponent }
+  { path: 'health', component: HealthComponent },
+  {path:'rules',component:RulesComponent}
 
 
 ];

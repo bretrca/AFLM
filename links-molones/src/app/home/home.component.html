@@ -7,7 +7,7 @@
         <span>M</span>
     </h1>
     <div class='nav'>
-        <button routerLink="/animals"  *ngIf='animalElement!==true' (onClick)="routeValidation($event)" change="true">Animales</button>
+        <button routerLink="/animals"  *ngIf='animalElement!==true' (onClick)="routeValidation($event)" [change]="true">Animales</button>
         <button routerLink="/books">Libros</button>
         <button  routerLink="/music">Música</button>
         <button routerLink="/health">Salud</button>

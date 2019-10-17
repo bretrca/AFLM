@@ -1,0 +1,16 @@
+.heads{
+    background: rgba(255, 0, 0, 0.541);
+    color: white;
+}
+.center{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr ;
+    padding: 1rem;
+    p{
+        margin: auto;
+    }
+    ol{
+    margin: auto;
+}
+}
